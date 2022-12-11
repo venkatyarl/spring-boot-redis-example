@@ -18,7 +18,7 @@ services:
       - '6379:6379'
     command: redis-server
     volumes:
-      - ./db-data/redis/data/:/data
+      - ./db-data/redis/:/data
       - ./db-data/redis/redis.conf:/usr/local/etc/redis/redis.conf
     environment:
       REDIS_PASS: password
